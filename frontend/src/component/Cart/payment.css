@@ -7,8 +7,10 @@
 }
 
 .paymentForm {
-  width: 22%;
-  height: 100%;
+  width: 25%;
+  height: 90%;
+  box-shadow: 0 0 10px rgba(7, 8, 7, 0.26);
+
 }
 
 .paymentForm > p {
@@ -35,6 +37,9 @@
   border: 1px solid rgba(0, 0, 0, 0.267);
   border-radius: 4px;
   outline: none;
+  border-radius: 1vmax;
+  margin-left: 1vmax;
+  margin-right: 1vmax;
 }
 
 .paymentForm > div > svg {
@@ -49,11 +54,15 @@
   background-color: tomato;
   color: white;
   font: 300 0.9vmax "Roboto";
-  width: 100%;
+  width: 92%;
   padding: 0.8vmax;
   cursor: pointer;
   transition: all 0.5s;
   outline: none;
+  border-radius: 1vmax;
+  margin-left: 1vmax;
+  margin-right: 1vmax;
+
 }
 
 .paymentFormBtn:hover {

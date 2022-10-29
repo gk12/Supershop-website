@@ -13,20 +13,20 @@
   }
   
   .banner > h1 {
-    margin: 5vmax;
+    margin: 8vmax;
   
     font: 600 2.5vmax "Roboto";
   }
   
   .banner > p {
-    
+    margin: -5vmax;
     font: 300 1.9vmax "Lucida Sans";
     text-decoration: underline overline dotted rgb(47, 0, 255);
-
+    
   }
   
   .banner > a > button {
-    margin-bottom: 5vmax;
+    margin-bottom: 14vmax;
     cursor: pointer;
     background-color: white;
     border: 1px solid white;
@@ -49,7 +49,7 @@
     position: absolute;
     top: 0%;
     left: 0;
-    clip-path: polygon(100% 68%, 0 100%, 100% 100%);
+    clip-path: polygon(100% 100%, 0 100%, 100% 100%);
     max-width: 100%;
   }
   
@@ -82,6 +82,9 @@
     margin: 2vmax;
     transition: all 0.5s;
     padding-bottom: 0.5vmax;
+    box-shadow: 0 0 20px #888888;
+    /* box-shadow: 5px 10px 8px 10px #888888; */
+
   }
   
   .productCard > img {
@@ -95,6 +98,9 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    box-shadow: 0 0 10px rgba(59, 153, 9, 0.26);
+
+    
   }
   
   .productCardSpan {
@@ -107,6 +113,7 @@
     font-size: 1.2vmax;
     margin: 1vmax 0.5vmax;
     margin-bottom: 0;
+    
   }
   
   .productCard > span {
@@ -114,10 +121,12 @@
     color: tomato;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-size: 1vmax;
+    margin-left: 5vmax;
+
   }
   
   .productCard:hover {
-    box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+    box-shadow: 0 0 30px rgba(235, 76, 13, 0.26);
   
     transform: translateY(-1vmax);
   }

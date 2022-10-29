@@ -41,31 +41,9 @@ const About = () => {
               alt="Founder"
             />
             <h2>Gaurav Kumar</h2>
-            {/* <Button onClick={visitInstagram} color="primary">
-              Visit Instagram
-            </Button> */}
           
-          </div>
-          {/* yaha maine pahle utbue,insta,linkedin ka logo and link daala tha */}
-          {/* <div className="aboutSectionContainer2">
-            <Typography component="h2">Our Brands</Typography>
-            <a
-            put utube link of supershop
-              href="https://www.youtube.com/channel/UCbpFB6_KJJPYKdgAwPgqJww"
-              target="blank"
-            >
-              <YouTubeIcon className="youtubeSvgIcon" />
-            </a>
-               put insta link 
-             <a href="https://www.instagram.com/__gauravjha__/" target="blank">
-              <InstagramIcon className="instagramSvgIcon" />
-              </a>
-
-              <a href="https://www.linkedin.com/in/gauravkumar44/" target="blank">
-              <LinkedinIcon className="linkedinSvgIcon"/>
-
-              </a>
-          </div> */}
+          
+          </div> 
         </div>
       </div>
     </div>
