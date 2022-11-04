@@ -72,6 +72,7 @@
   
   .CarouselImage {
     width: 20vmax;
+    height: 20vmax;
   }
   
   .detailsBlock-1 > h2 {
