@@ -1,5 +1,5 @@
 import "./App.css";
-import { useEffect, useState } from "react";
+import { useEffect} from "react";
 import Header from "./component/layout/Header/Header";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import WebFont from "webfontloader";
@@ -23,7 +23,6 @@ import ResetPassword from "./component/User/ResetPassword";
 import Cart from "./component/Cart/Cart";
 import Shipping from "./component/Cart/Shipping";
 import ConfirmOrder from "./component/Cart/ConfirmOrder";
-import axios from "axios";
 import Payment from "./component/Cart/Payment";
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
@@ -41,17 +40,14 @@ import UpdateUser from "./component/Admin/UpdateUser";
 import ProductReviews from "./component/Admin/ProductReviews";
 import Contact from "./component/layout/Contact/Contact";
 import About from "./component/layout/About/About";
-import NotFound from "./component/layout/Not Found/NotFound";
+const apikey=`pk_test_51LiHfzSJGiVlrqifrLgNLtD47mUdQhuXTnQ6Hvt7hB9ylfGjYBlEvSx0lRfSc6ZTtu5aK752E7qbyWmdVmCCE5i000yof0CHg8`;
+
+const apikey1=loadStripe(apikey);
+
 
 function App() {
   const { isAuthenticated, user } = useSelector((state) => state.user);
 
-  const [stripeApiKey, setStripeApiKey] = useState("");
-
-  async function getStripeApiKey() {
-    const { data } = await axios.get("/api/v1/stripeapikey");
-    setStripeApiKey(data.stripeApiKey);
-  }
 
   useEffect(() => {
     WebFont.load({
@@ -64,7 +60,7 @@ function App() {
       store.dispatch(loadUser());
     
 
-    getStripeApiKey();
+    // getStripeApiKey();
   }, []);
 
   // this is used to lock inspect
@@ -76,14 +72,12 @@ function App() {
 
 
       {isAuthenticated && <UserOptions user={user} />}
+      <Elements stripe={apikey1}>
 
-      {stripeApiKey && (
-        <Elements stripe={loadStripe(stripeApiKey)}>
-          <ProtectedRoute exact path="/process/payment" component={Payment} />
-        </Elements>
-      )}
 
       <Switch>
+      <ProtectedRoute exact path="/process/payment" component={Payment} />
+
         <Route exact path="/" component={Home} />
         <Route exact path="/product/:id" component={ProductDetails} />
         <Route exact path="/products" component={Products} />
@@ -183,12 +177,9 @@ function App() {
           component={ProductReviews}
         />
 
-        <Route
-          component={
-            window.location.pathname === "/process/payment" ? null : NotFound
-          }
-        />
+       
       </Switch>
+      </Elements>
 
       <Footer />
     </Router>
