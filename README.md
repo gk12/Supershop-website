@@ -25,6 +25,7 @@ Project Live Link - [SUPERSHOP](https://supershop-ecommerce-website.herokuapp.co
 
 - Clone the repository
 ```
+git clone https://github.com/gk12/crud--operation.git
 ```
 - Install required modules
   
