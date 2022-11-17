@@ -16,12 +16,13 @@ const Footer = () => {
       </div>
 
       <div className="midFooter">
-        <h1>SUPERSHOP</h1>
+        {/* <h1>SUPERSHOP</h1> */}
+        <h1>SHOPPINGMART</h1>
         <p>High Quality is our first priority</p>
       </div>
 
       <div className="rightFooter">
-        <h4>Follow Us</h4>
+        {/* <h4>Follow Us</h4>
         <a href="https://www.instagram.com/__gauravjha__/">
         <InstagramIcon  className="instagramSvgIcon" />
         </a>
@@ -30,7 +31,7 @@ const Footer = () => {
         </a>
         <a href="https://www.linkedin.com/in/gauravkumar44/">
         <LinkedInIcon className='linkedSvgIcon'/>
-        </a>
+        </a> */}
       </div>
 
     </footer>

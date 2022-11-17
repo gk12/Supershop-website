@@ -16,7 +16,8 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <Link to="/">
-        <img src={logo} alt="SUPERSHOP" />
+        {/* COMMENTED */}
+        {/* <img src={logo} alt="SUPERSHOP" /> */}
       </Link>
       <Link to="/admin/dashboard">
         <p>

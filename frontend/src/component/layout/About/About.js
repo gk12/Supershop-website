@@ -23,24 +23,28 @@ const About = () => {
               This is an E-commerece website(Supershop) made by using MERN stack where user can buy and checkout product.
               And add review and rating for the product. 
             </span>
-          <Avatar
+            {/* comment avtar */}
+          {/* <Avatar
               style={{ width: "20vmax", height: "20vmax", margin: "2vmax 0" }}
               //put founder image at abc.png
               src="https://res.cloudinary.com/gk35044/image/upload/v1664183793/avatars/logo_qqqtid.png"
               alt="Website Logo"
-            />
+            /> */}
           </div>
 
           <div>
           <h1>Designed and Developed By</h1>
 
+             {/* src commented and alt and h2 */}
+
             <Avatar
               style={{ width: "15vmax", height: "15vmax", margin: "2vmax 0" }}
               //put founder image at abc.png
-              src="https://res.cloudinary.com/gk35044/image/upload/v1664181456/avatars/WhatsApp_Image_2022-09-26_at_2.07.00_PM_ubggul.jpg"
-              alt="Founder"
+              // src="https://res.cloudinary.com/gk35044/image/upload/v1664181456/avatars/WhatsApp_Image_2022-09-26_at_2.07.00_PM_ubggul.jpg"
+              // alt="Founder"
             />
-            <h2>Gaurav Kumar</h2>
+            {/* <h2>Gaurav Kumar</h2> */}
+            <h2>Group of People</h2>
           
           
           </div> 

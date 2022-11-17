@@ -98,6 +98,10 @@ const LoginSignUp = ({ history, location }) => {
       loginTab.current.classList.add("shiftToLeft");
     }
   };
+function Hey()
+{
+    alert('you have successfully registered');
+}
 
   return (
     <Fragment>
