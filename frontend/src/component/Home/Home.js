@@ -30,8 +30,7 @@ const Home = () => {
           <MetaData title="SUPERSHOP" />
 
           <div className="banner">
-            {/* <p>WELCOME TO SUPERSHOP</p> */}
-            <p>WELCOME TO SHOPPINGMART</p>
+            <p>WELCOME TO SUPERSHOP</p>
             <h1>FIND AMAZING PRODUCTS BELOW</h1>
 
             <a href="#container">
