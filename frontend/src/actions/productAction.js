@@ -36,7 +36,6 @@ import {
 export const getAllProducts =
   (keyword ="", currentPage = 1,minprice=0,maxprice=500000, category, ratings = 0) =>
   async (dispatch) => {
-    console.log("fetching products");
     try {
       dispatch({ type: ALL_PRODUCT_REQUEST });
       // let link = `/api/v1/products?keyword=${keyword}&page=${currentPage}&price[gte]=${price[0]}&price[lte]=${price[1]}&ratings[gte]=${ratings}`;
@@ -51,9 +50,7 @@ export const getAllProducts =
         category !== "ALL") {
         link = `/api/v1/products?keyword=${keyword}&page=${currentPage}&price[gte]=${minprice}&price[lte]=${maxprice}&category=${category}&ratings[gte]=${ratings}`;
       }
-      console.log(link);
       const { data } = await axios.get(link);
-      console.log(data);
       
 
       dispatch({

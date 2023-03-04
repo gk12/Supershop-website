@@ -1,5 +1,5 @@
 .banner {
-    background-image: url("../../images/golu1.jpg");
+    background-image: url("../../images/lol2.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,9 +20,7 @@
   
   .banner > p {
     margin: -5vmax;
-    font: 300 1.9vmax "Lucida Sans";
-    text-decoration: underline overline dotted rgb(47, 0, 255);
-    
+    font: 300 1.9vmax "Lucida Sans";    
   }
   
   .banner > a > button {
@@ -71,6 +69,7 @@
     flex-wrap: wrap;
     justify-content: center;
     max-width: 100%;
+  
   }
   
   .productCard {
